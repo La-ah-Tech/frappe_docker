@@ -13,23 +13,23 @@ variable NODE_VERSION {
 }
 
 variable "FRAPPE_VERSION" {
-    default = "develop"
+    default = "laahtech-em"
 }
 
 variable "ERPNEXT_VERSION" {
-    default = "develop"
+    default = "laahtech-em"
 }
 
 variable "FRAPPE_REPO" {
-    default = "https://github.com/frappe/frappe"
+    default = "https://github.com/La-ah-Tech/frappe"
 }
 
 variable "ERPNEXT_REPO" {
-    default = "https://github.com/frappe/erpnext"
+    default = "https://github.com/La-ah-Tech/erpnext"
 }
 
 variable "BENCH_REPO" {
-    default = "https://github.com/frappe/bench"
+    default = "https://github.com/La-ah-Tech/bench"
 }
 
 variable "LATEST_BENCH_RELEASE" {
