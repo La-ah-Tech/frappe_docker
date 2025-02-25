@@ -2,7 +2,7 @@ FROM debian:bookworm-slim AS bench
 
 LABEL author=frappé
 
-ARG GIT_REPO=https://github.com/frappe/bench.git
+ARG GIT_REPO=https://github.com/La-ah-Tech/bench.git
 ARG GIT_BRANCH=v5.x
 
 RUN apt-get update \
@@ -54,7 +54,7 @@ RUN apt-get update \
     # VSCode container requirements
     net-tools \
     # For pyenv build dependencies
-    # https://github.com/frappe/frappe_docker/issues/840#issuecomment-1185206895
+    # https://github.com/La-ah-Tech/frappe_docker/issues/840#issuecomment-1185206895
     make \
     # For pandas
     libbz2-dev \
@@ -116,7 +116,7 @@ RUN git clone --depth 1 https://github.com/pyenv/pyenv.git .pyenv \
 # For development, bench source is located in ~/.bench
 ENV PATH=/home/frappe/.local/bin:$PATH
 # Skip editable-bench warning
-# https://github.com/frappe/bench/commit/20560c97c4246b2480d7358c722bc9ad13606138
+# https://github.com/La-ah-Tech/bench/commit/20560c97c4246b2480d7358c722bc9ad13606138
 RUN git clone ${GIT_REPO} --depth 1 -b ${GIT_BRANCH} .bench \
     && pip install --no-cache-dir --user -e .bench \
     && echo "export PATH=/home/frappe/.local/bin:\$PATH" >>/home/frappe/.bashrc \

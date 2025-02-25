@@ -19,7 +19,7 @@ We use environment variables to configure our setup. docker-compose uses variabl
 
 ### `FRAPPE_VERSION`
 
-Frappe framework release. You can find all releases [here](https://github.com/frappe/frappe/releases).
+Frappe framework release. You can find all releases [here](https://github.com/La-ah-Tech/frappe/releases).
 
 ### `DB_PASSWORD`
 
@@ -43,7 +43,7 @@ Hostname for redis server to store queue data and socketio. Set only if external
 
 ### `ERPNEXT_VERSION`
 
-ERPNext [release](https://github.com/frappe/erpnext/releases). This variable is required if you use ERPNext override.
+ERPNext [release](https://github.com/La-ah-Tech/erpnext/releases). This variable is required if you use ERPNext override.
 
 ### `LETSENCRYPT_EMAIL`
 

@@ -23,7 +23,7 @@ Here is a screenshot showing the settings in Docker Desktop on Mac
 Clone and change directory to frappe_docker directory
 
 ```shell
-git clone https://github.com/frappe/frappe_docker.git
+git clone https://github.com/La-ah-Tech/frappe_docker.git
 cd frappe_docker
 ```
 
@@ -263,7 +263,7 @@ options:
   -s SITE_NAME, --site-name SITE_NAME
                         Site name, should end with .localhost, default: development.localhost
   -r FRAPPE_REPO, --frappe-repo FRAPPE_REPO
-                        frappe repo to use, default: https://github.com/frappe/frappe
+                        frappe repo to use, default: https://github.com/La-ah-Tech/frappe
   -t FRAPPE_BRANCH, --frappe-branch FRAPPE_BRANCH
                         frappe repo to use, default: version-15
   -p PY_VERSION, --py-version PY_VERSION

@@ -1,7 +1,7 @@
 Clone the version-10 branch of this repo
 
 ```shell
-git clone https://github.com/frappe/frappe_docker.git -b version-10 && cd frappe_docker
+git clone https://github.com/La-ah-Tech/frappe_docker.git -b version-10 && cd frappe_docker
 ```
 
 Build the images

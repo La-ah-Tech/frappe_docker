@@ -3,7 +3,7 @@
 step1: clone the repo
 
 ```
-git clone https://github.com/frappe/frappe_docker
+git clone https://github.com/La-ah-Tech/frappe_docker
 ```
 
 step2: add platform: linux/amd64 to all services in the /pwd.yaml

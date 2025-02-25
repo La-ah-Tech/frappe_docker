@@ -1,7 +1,7 @@
-[![Build Stable](https://github.com/frappe/frappe_docker/actions/workflows/build_stable.yml/badge.svg)](https://github.com/frappe/frappe_docker/actions/workflows/build_stable.yml)
-[![Build Develop](https://github.com/frappe/frappe_docker/actions/workflows/build_develop.yml/badge.svg)](https://github.com/frappe/frappe_docker/actions/workflows/build_develop.yml)
+[![Build Stable](https://github.com/La-ah-Tech/frappe_docker/actions/workflows/build_stable.yml/badge.svg)](https://github.com/La-ah-Tech/frappe_docker/actions/workflows/build_stable.yml)
+[![Build Develop](https://github.com/La-ah-Tech/frappe_docker/actions/workflows/build_develop.yml/badge.svg)](https://github.com/La-ah-Tech/frappe_docker/actions/workflows/build_develop.yml)
 
-Everything about [Frappe](https://github.com/frappe/frappe) and [ERPNext](https://github.com/frappe/erpnext) in containers.
+Everything about [Frappe](https://github.com/La-ah-Tech/frappe) and [ERPNext](https://github.com/La-ah-Tech/erpnext) in containers.
 
 # Getting Started
 
@@ -22,7 +22,7 @@ To play in an already set up sandbox, in your browser, click the button below:
 First clone the repo:
 
 ```sh
-git clone https://github.com/frappe/frappe_docker
+git clone https://github.com/La-ah-Tech/frappe_docker
 cd frappe_docker
 ```
 
@@ -49,7 +49,7 @@ If you ran in a Dev Docker environment, to view container logs: `docker compose 
 
 # Documentation
 
-### [Frequently Asked Questions](https://github.com/frappe/frappe_docker/wiki/Frequently-Asked-Questions)
+### [Frequently Asked Questions](https://github.com/La-ah-Tech/frappe_docker/wiki/Frequently-Asked-Questions)
 
 ### [Production](#production)
 
@@ -85,6 +85,6 @@ If you want to contribute to this repo refer to [CONTRIBUTING.md](CONTRIBUTING.m
 
 This repository is only for container related stuff. You also might want to contribute to:
 
-- [Frappe framework](https://github.com/frappe/frappe#contributing),
-- [ERPNext](https://github.com/frappe/erpnext#contributing),
-- [Frappe Bench](https://github.com/frappe/bench).
+- [Frappe framework](https://github.com/La-ah-Tech/frappe#contributing),
+- [ERPNext](https://github.com/La-ah-Tech/erpnext#contributing),
+- [Frappe Bench](https://github.com/La-ah-Tech/bench).

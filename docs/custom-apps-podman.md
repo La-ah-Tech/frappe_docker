@@ -9,32 +9,37 @@ Podman (the POD MANager) is a tool for managing containers and images, volumes m
 ## Step 1
 
 - Clone this repository and change the current directory to the downloaded folder
+
   ```cmd
-    git clone https://github.com/frappe/frappe_docker
+    git clone https://github.com/La-ah-Tech/frappe_docker
     cd frappe_docker
   ```
 
 ## Step 2
 
 - Create `apps.json` file with custom apps listed in it
+
   ```json
   [
     {
-      "url": "https://github.com/frappe/erpnext",
+      "url": "https://github.com/La-ah-Tech/erpnext",
       "branch": "version-15"
     },
     {
-      "url": "https://github.com/frappe/hrms",
+      "url": "https://github.com/La-ah-Tech/hrms",
       "branch": "version-15"
     },
     {
-      "url": "https://github.com/frappe/helpdesk",
+      "url": "https://github.com/La-ah-Tech/helpdesk",
       "branch": "main"
     }
   ]
   ```
+
   Check the syntax of the file using `jq empty apps.json`
-  ### Generate base64 string from JSON file:
+
+  ### Generate base64 string from JSON file
+
   `cmd export APPS_JSON_BASE64=$(base64 -w 0 apps.json)`
 
 ## Step 3
@@ -43,7 +48,7 @@ Podman (the POD MANager) is a tool for managing containers and images, volumes m
 
 ```ruby
   podman build \
-   --build-arg=FRAPPE_PATH=https://github.com/frappe/frappe \
+   --build-arg=FRAPPE_PATH=https://github.com/La-ah-Tech/frappe \
    --build-arg=FRAPPE_BRANCH=version-15 \
    --build-arg=APPS_JSON_BASE64=$APPS_JSON_BASE64 \
    --tag=custom:15 \
@@ -58,17 +63,20 @@ Podman (the POD MANager) is a tool for managing containers and images, volumes m
 
 - Using the image
 - Export environment variables with image name, tag and pull_policy
+
   ```ruby
       export CUSTOM_IMAGE=custom
       export CUSTOM_TAG=15
       export PULL_POLICY=never
   ```
+
 - Configuration of parameters used when starting the containers
-  - create `.env` file copying from example.env (Read more on setting up environment variables [here](https://github.com/frappe/frappe_docker/blob/main/docs/environment-variables.md)
+  - create `.env` file copying from example.env (Read more on setting up environment variables [here](https://github.com/La-ah-Tech/frappe_docker/blob/main/docs/environment-variables.md)
 
 ## Final step
 
 - Creating a compose file
+
 - ```ruby
    podman compose -f compose.yaml \
   -f overrides/compose.mariadb.yaml \
@@ -76,7 +84,9 @@ Podman (the POD MANager) is a tool for managing containers and images, volumes m
   -f overrides/compose.noproxy.yaml \
   config > ./docker-compose.yml
   ```
+
   ### NOTE
+
   - podman compose is just a wrapper, it uses docker-compose if it is available or podman-compose if not. podman-compose have an issue reading .env files ([Issue](https://github.com/containers/podman-compose/issues/475)) and might create an issue when running the containers.
 - Creating pod and starting the containers
   - `podman-compose --in-pod=1 --project-name erpnext -f ./docker-compose.yml up -d`
