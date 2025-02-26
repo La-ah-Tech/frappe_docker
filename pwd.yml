@@ -1,6 +1,6 @@
 services:
   backend:
-    image: frappe/erpnext:latest
+    image: frappe/erpnext:laahtech-em
     deploy:
       restart_policy:
         condition: on-failure
@@ -9,7 +9,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   configurator:
-    image: frappe/erpnext:latest
+    image: frappe/erpnext:laahtech-em
 
     deploy:
       restart_policy:
@@ -38,7 +38,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   create-site:
-    image: frappe/erpnext:latest
+    image: frappe/erpnext:laahtech-em
     deploy:
       restart_policy:
         condition: none
@@ -88,7 +88,7 @@ services:
       - db-data:/var/lib/mysql
 
   frontend:
-    image: frappe/erpnext:latest
+    image: frappe/erpnext:laahtech-em
     depends_on:
       - websocket
     deploy:
@@ -112,7 +112,7 @@ services:
       - "8080:8080"
 
   queue-long:
-    image: frappe/erpnext:latest
+    image: frappe/erpnext:laahtech-em
     deploy:
       restart_policy:
         condition: on-failure
@@ -126,7 +126,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   queue-short:
-    image: frappe/erpnext:latest
+    image: frappe/erpnext:laahtech-em
     deploy:
       restart_policy:
         condition: on-failure
@@ -155,7 +155,7 @@ services:
         condition: on-failure
 
   scheduler:
-    image: frappe/erpnext:latest
+    image: frappe/erpnext:laahtech-em
     deploy:
       restart_policy:
         condition: on-failure
@@ -167,7 +167,7 @@ services:
       - logs:/home/frappe/frappe-bench/logs
 
   websocket:
-    image: frappe/erpnext:latest
+    image: frappe/erpnext:laahtech-em
     deploy:
       restart_policy:
         condition: on-failure
