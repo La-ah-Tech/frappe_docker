@@ -265,7 +265,7 @@ options:
   -r FRAPPE_REPO, --frappe-repo FRAPPE_REPO
                         frappe repo to use, default: https://github.com/La-ah-Tech/frappe
   -t FRAPPE_BRANCH, --frappe-branch FRAPPE_BRANCH
-                        frappe repo to use, default: version-15
+                        frappe repo to use, default: laahtech-em
   -p PY_VERSION, --py-version PY_VERSION
                         python version, default: Not Set
   -n NODE_VERSION, --node-version NODE_VERSION

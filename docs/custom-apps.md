@@ -8,11 +8,11 @@ Create the following `apps.json` file:
 [
   {
     "url": "https://github.com/La-ah-Tech/erpnext",
-    "branch": "version-15"
+    "branch": "laahtech-em"
   },
   {
     "url": "https://github.com/La-ah-Tech/payments",
-    "branch": "version-15"
+    "branch": "laahtech-em"
   },
   {
     "url": "https://{{ PAT }}@git.example.com/project/repository.git",
@@ -57,7 +57,7 @@ cd frappe_docker
 Common build args.
 
 - `FRAPPE_PATH`, customize the source repo for frappe framework. Defaults to `https://github.com/La-ah-Tech/frappe`
-- `FRAPPE_BRANCH`, customize the source repo branch for frappe framework. Defaults to `version-15`.
+- `FRAPPE_BRANCH`, customize the source repo branch for frappe framework. Defaults to `laahtech-em`.
 - `APPS_JSON_BASE64`, correct base64 encoded JSON string generated from `apps.json` file.
 
 Notes
@@ -76,7 +76,7 @@ It uses `images/layered/Containerfile`.
 ```shell
 docker build \
   --build-arg=FRAPPE_PATH=https://github.com/La-ah-Tech/frappe \
-  --build-arg=FRAPPE_BRANCH=version-15 \
+  --build-arg=FRAPPE_BRANCH=laahtech-em \
   --build-arg=APPS_JSON_BASE64=$APPS_JSON_BASE64 \
   --tag=ghcr.io/user/repo/custom:1.0.0 \
   --file=images/layered/Containerfile .
@@ -91,7 +91,7 @@ It uses `images/custom/Containerfile`.
 ```shell
 docker build \
   --build-arg=FRAPPE_PATH=https://github.com/La-ah-Tech/frappe \
-  --build-arg=FRAPPE_BRANCH=version-15 \
+  --build-arg=FRAPPE_BRANCH=laahtech-em \
   --build-arg=PYTHON_VERSION=3.11.9 \
   --build-arg=NODE_VERSION=18.20.2 \
   --build-arg=APPS_JSON_BASE64=$APPS_JSON_BASE64 \

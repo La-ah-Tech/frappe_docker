@@ -1,8 +1,8 @@
-ARG FRAPPE_BRANCH=version-15
+ARG FRAPPE_BRANCH=laahtech-em
 
 FROM frappe/build:${FRAPPE_BRANCH} AS builder
 
-ARG FRAPPE_BRANCH=version-15
+ARG FRAPPE_BRANCH=laahtech-em
 ARG FRAPPE_PATH=https://github.com/La-ah-Tech/frappe
 ARG APPS_JSON_BASE64
 

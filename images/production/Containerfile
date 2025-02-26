@@ -100,10 +100,10 @@ USER frappe
 
 FROM build AS builder
 
-ARG FRAPPE_BRANCH=version-15
+ARG FRAPPE_BRANCH=laahtech-em
 ARG FRAPPE_PATH=https://github.com/La-ah-Tech/frappe
 ARG ERPNEXT_REPO=https://github.com/La-ah-Tech/erpnext
-ARG ERPNEXT_BRANCH=version-15
+ARG ERPNEXT_BRANCH=laahtech-em
 RUN bench init \
   --frappe-branch=${FRAPPE_BRANCH} \
   --frappe-path=${FRAPPE_PATH} \

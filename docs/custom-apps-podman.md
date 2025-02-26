@@ -23,11 +23,11 @@ Podman (the POD MANager) is a tool for managing containers and images, volumes m
   [
     {
       "url": "https://github.com/La-ah-Tech/erpnext",
-      "branch": "version-15"
+      "branch": "laahtech-em"
     },
     {
       "url": "https://github.com/La-ah-Tech/hrms",
-      "branch": "version-15"
+      "branch": "laahtech-em"
     },
     {
       "url": "https://github.com/La-ah-Tech/helpdesk",
@@ -49,7 +49,7 @@ Podman (the POD MANager) is a tool for managing containers and images, volumes m
 ```ruby
   podman build \
    --build-arg=FRAPPE_PATH=https://github.com/La-ah-Tech/frappe \
-   --build-arg=FRAPPE_BRANCH=version-15 \
+   --build-arg=FRAPPE_BRANCH=laahtech-em \
    --build-arg=APPS_JSON_BASE64=$APPS_JSON_BASE64 \
    --tag=custom:15 \
    --file=images/layered/Containerfile .

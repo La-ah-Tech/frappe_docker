@@ -72,8 +72,8 @@ def get_args_parser():
         "--frappe-branch",
         action="store",
         type=str,
-        help="frappe repo to use, default: version-15",  # noqa: E501
-        default="version-15",
+        help="frappe repo to use, default: laahtech-em",  # noqa: E501
+        default="laahtech-em",
     )
     parser.add_argument(
         "-p",
