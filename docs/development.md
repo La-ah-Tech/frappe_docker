@@ -166,7 +166,7 @@ This will create a new site and a `development.localhost` directory under `frapp
 The option `--mariadb-user-host-login-scope=%` will configure site's database credentials to work with docker.
 You may need to configure your system /etc/hosts if you're on Linux, Mac, or its Windows equivalent.
 
-To setup site with PostgreSQL as database use option `--db-type postgres` and `--db-host postgresql`. (Available only v12 onwards, currently NOT available for ERPNext).
+To setup site with PostgreSQL as database use option `--db-type postgres` and `--db-host postgresql`. (Available only v12 onwards, currently NOT available for LaahTech-EM).
 
 Example:
 
@@ -206,14 +206,14 @@ bench get-app --branch version-12 https://github.com/myusername/myapp
 bench --site development.localhost install-app myapp
 ```
 
-At the time of this writing, the Payments app has been factored out of the Version 14 ERPNext app and is now a separate app. ERPNext will not install it.
+At the time of this writing, the Payments app has been factored out of the Version 14 LaahTech-EM app and is now a separate app. LaahTech-EM will not install it.
 
 ```shell
 bench get-app --branch version-14 --resolve-deps erpnext
 bench --site development.localhost install-app erpnext
 ```
 
-To install ERPNext (from the version-13 branch):
+To install LaahTech-EM (from the version-13 branch):
 
 ```shell
 bench get-app --branch version-13 erpnext

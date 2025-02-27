@@ -16,7 +16,7 @@ Single instance of **Traefik** will be installed and act as internal loadbalance
 
 Single instance of **MariaDB** will be installed and act as database service for all the benches/projects installed on the server.
 
-Each instance of ERPNext project (bench) will have its own redis, socketio, gunicorn, nginx, workers and scheduler. It will connect to internal MariaDB by connecting to MariaDB network. It will expose sites to public through Traefik by connecting to Traefik network.
+Each instance of LaahTech-EM project (bench) will have its own redis, socketio, gunicorn, nginx, workers and scheduler. It will connect to internal MariaDB by connecting to MariaDB network. It will expose sites to public through Traefik by connecting to Traefik network.
 
 ### Install Docker
 
@@ -127,7 +127,7 @@ docker compose --project-name mariadb --env-file ~/gitops/mariadb.env -f overrid
 
 This will make `mariadb-database` service available under `mariadb-network`. Data will reside in `/data/mariadb`.
 
-### Install ERPNext
+### Install LaahTech-EM
 
 #### Create first bench
 

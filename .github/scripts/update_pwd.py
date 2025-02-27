@@ -6,7 +6,7 @@ def get_versions():
     frappe_version = os.getenv("FRAPPE_VERSION")
     erpnext_version = os.getenv("ERPNEXT_VERSION")
     assert frappe_version, "No Frappe version set"
-    assert erpnext_version, "No ERPNext version set"
+    assert erpnext_version, "No LaahTech-EM version set"
     return frappe_version, erpnext_version
 
 

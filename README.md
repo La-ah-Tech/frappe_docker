@@ -1,7 +1,7 @@
 [![Build Stable](https://github.com/La-ah-Tech/frappe_docker/actions/workflows/build_stable.yml/badge.svg)](https://github.com/La-ah-Tech/frappe_docker/actions/workflows/build_stable.yml)
 [![Build Develop](https://github.com/La-ah-Tech/frappe_docker/actions/workflows/build_develop.yml/badge.svg)](https://github.com/La-ah-Tech/frappe_docker/actions/workflows/build_develop.yml)
 
-Everything about [Frappe](https://github.com/La-ah-Tech/frappe) and [ERPNext](https://github.com/La-ah-Tech/erpnext) in containers.
+Everything about [Frappe](https://github.com/La-ah-Tech/frappe) and [LaahTech-EM](https://github.com/La-ah-Tech/erpnext) in containers.
 
 # Getting Started
 
@@ -43,7 +43,7 @@ Then run: `docker compose -f pwd.yml up -d`
 
 ## Final steps
 
-Wait for 5 minutes for ERPNext site to be created or check `create-site` container logs before opening browser on port 8080. (username: `Administrator`, password: `admin`)
+Wait for 5 minutes for LaahTech-EM site to be created or check `create-site` container logs before opening browser on port 8080. (username: `Administrator`, password: `admin`)
 
 If you ran in a Dev Docker environment, to view container logs: `docker compose -f pwd.yml logs -f create-site`. Don't worry about some of the initial error messages, some services take a while to become ready, and then they go away.
 
@@ -86,5 +86,5 @@ If you want to contribute to this repo refer to [CONTRIBUTING.md](CONTRIBUTING.m
 This repository is only for container related stuff. You also might want to contribute to:
 
 - [Frappe framework](https://github.com/La-ah-Tech/frappe#contributing),
-- [ERPNext](https://github.com/La-ah-Tech/erpnext#contributing),
+- [LaahTech-EM](https://github.com/La-ah-Tech/erpnext#contributing),
 - [Frappe Bench](https://github.com/La-ah-Tech/bench).

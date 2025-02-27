@@ -1,4 +1,4 @@
-# How to install ERPNext on linux/mac using Frappe_docker ?
+# How to install LaahTech-EM on linux/mac using Frappe_docker ?
 
 step1: clone the repo
 

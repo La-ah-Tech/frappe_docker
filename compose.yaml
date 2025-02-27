@@ -90,6 +90,6 @@ services:
     platform: linux/amd64
     command: bench schedule
 
-# ERPNext requires local assets access (Frappe does not)
+# LaahTech-EM requires local assets access (Frappe does not)
 volumes:
   sites:

@@ -15,7 +15,7 @@ Example change:
 ```yaml
 # ... removed for brevity
 frontend:
-  image: frappe/erpnext:${ERPNEXT_VERSION:?ERPNext version not set}
+  image: frappe/erpnext:${ERPNEXT_VERSION:?LaahTech-EM version not set}
   command:
     - nginx-entrypoint.sh
   environment:
@@ -35,7 +35,7 @@ Example change:
 ```yaml
 # ... removed for brevity
 websocket:
-  image: frappe/erpnext:${ERPNEXT_VERSION:?ERPNext version not set}
+  image: frappe/erpnext:${ERPNEXT_VERSION:?LaahTech-EM version not set}
   command:
     - node
     - /home/frappe/frappe-bench/apps/frappe/socketio.js
@@ -51,7 +51,7 @@ Example change:
 ```yaml
 # ... removed for brevity
 configurator:
-  image: frappe/erpnext:${ERPNEXT_VERSION:?ERPNext version not set}
+  image: frappe/erpnext:${ERPNEXT_VERSION:?LaahTech-EM version not set}
   restart: "no"
   entrypoint:
     - bash
@@ -83,7 +83,7 @@ Example change:
 ```yaml
 # ... removed for brevity
 create-site:
-  image: frappe/erpnext:${ERPNEXT_VERSION:?ERPNext version not set}
+  image: frappe/erpnext:${ERPNEXT_VERSION:?LaahTech-EM version not set}
   restart: "no"
   entrypoint:
     - bash

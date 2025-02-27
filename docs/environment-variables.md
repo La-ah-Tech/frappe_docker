@@ -43,7 +43,7 @@ Hostname for redis server to store queue data and socketio. Set only if external
 
 ### `ERPNEXT_VERSION`
 
-ERPNext [release](https://github.com/La-ah-Tech/erpnext/releases). This variable is required if you use ERPNext override.
+LaahTech-EM [release](https://github.com/La-ah-Tech/erpnext/releases). This variable is required if you use LaahTech-EM override.
 
 ### `LETSENCRYPT_EMAIL`
 

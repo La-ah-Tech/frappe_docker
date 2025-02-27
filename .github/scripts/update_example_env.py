@@ -4,7 +4,7 @@ import re
 
 def get_erpnext_version():
     erpnext_version = os.getenv("ERPNEXT_VERSION")
-    assert erpnext_version, "No ERPNext version set"
+    assert erpnext_version, "No LaahTech-EM version set"
     return erpnext_version
 
 

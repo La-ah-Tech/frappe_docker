@@ -50,7 +50,7 @@ docker compose -f compose.yaml -f overrides/compose.noproxy.yaml config > ~/gito
 docker compose --project-name <project-name> -f ~/gitops/docker-compose.yml up -d
 ```
 
-### Setup ERPNext with proxy and external MariaDB and Redis
+### Setup LaahTech-EM with proxy and external MariaDB and Redis
 
 In this case make sure you've set `DB_HOST`, `DB_PORT`, `REDIS_CACHE` and `REDIS_QUEUE` environment variables or the `configurator` will fail.
 
@@ -80,7 +80,7 @@ docker compose -f compose.yaml \
 docker compose --project-name <project-name> -f ~/gitops/docker-compose.yml up -d
 ```
 
-### Setup ERPNext using containerized MariaDB and Redis with Letsencrypt certificates.
+### Setup LaahTech-EM using containerized MariaDB and Redis with Letsencrypt certificates.
 
 In this case make sure you've set `LETSENCRYPT_EMAIL` and `SITES` environment variables are set or certificates won't work.
 

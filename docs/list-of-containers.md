@@ -41,10 +41,10 @@ We have several [overrides](https://docs.docker.com/compose/extends/):
 - `overrides/compose.noproxy.yaml`. Publishes `frontend` ports directly without any proxy.
 - `overrides/compose.https.yaml`. Automatically sets up Let's Encrypt certificate and redirects all requests to directed to http, to https.
 - `overrides/compose.mariadb.yaml`. Adds `db` service and sets its image to MariaDB.
-- `overrides/compose.postgres.yaml`. Adds `db` service and sets its image to Postgres. Note that ERPNext currently doesn't support Postgres.
+- `overrides/compose.postgres.yaml`. Adds `db` service and sets its image to Postgres. Note that LaahTech-EM currently doesn't support Postgres.
 - `overrides/compose.redis.yaml`. Adds `redis` service and sets its image to `redis`.
 
-It is quite simple to run overrides. All we need to do is to specify compose files that should be used by docker-compose. For example, we want ERPNext:
+It is quite simple to run overrides. All we need to do is to specify compose files that should be used by docker-compose. For example, we want LaahTech-EM:
 
 ```bash
 # Point to main compose file (compose.yaml) and add one more.

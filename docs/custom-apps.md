@@ -25,7 +25,7 @@ Note:
 
 - The `url` needs to be http(s) git url with personal access tokens without username eg:- `http://{{PAT}}@github.com/project/repository.git` in case of private repo.
 - Add dependencies manually in `apps.json` e.g. add `erpnext` if you are installing `hrms`.
-- Use fork repo or branch for ERPNext in case you need to use your fork or test a PR.
+- Use fork repo or branch for LaahTech-EM in case you need to use your fork or test a PR.
 
 Generate base64 string from json file:
 
@@ -127,7 +127,7 @@ In the [compose.yaml](../compose.yaml), you can set the image name and tag throu
 
 ```yaml
 x-customizable-image: &customizable_image
-  image: ${CUSTOM_IMAGE:-frappe/erpnext}:${CUSTOM_TAG:-${ERPNEXT_VERSION:?No ERPNext version or tag set}}
+  image: ${CUSTOM_IMAGE:-frappe/erpnext}:${CUSTOM_TAG:-${ERPNEXT_VERSION:?No LaahTech-EM version or tag set}}
   pull_policy: ${PULL_POLICY:-always}
 ```
 
