@@ -2,5 +2,9 @@
   {
     "url": "https://github.com/La-ah-Tech/erpnext.git",
     "branch": "laahtech-em"
+  },
+  {
+    "url": "https://github.com/La-ah-Tech/hrms.git",
+    "branch": "laahtech-em"
   }
 ]
